@@ -46,43 +46,76 @@
     </script>
 
     <style>
+        :root {
+            --primary-color: #0047bb;
+            --secondary-color: #002d6b;
+            --accent-color: #28a745;
+            --bg-color: #f0f4f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
-            background-color: #f4f6f9;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
         }
         header {
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 3rem 1rem;
+            padding: 3.5rem 1rem;
             text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         header h1 {
             margin: 0 0 10px 0;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
+            font-weight: 700;
         }
         header p {
             margin: 0;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             opacity: 0.9;
         }
         .container {
-            max-width: 1000px;
-            margin: -2rem auto 2rem auto;
-            background: white;
+            max-width: 1050px;
+            margin: -2.5rem auto 3rem auto;
+            background: var(--card-bg);
             padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
             position: relative;
         }
+        /* قسم معرض صور الثلاجات المودرن */
+        .gallery-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 2rem 0;
+        }
+        .gallery-section img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+        .gallery-section img:hover {
+            transform: scale(1.03);
+        }
+        @media(max-width: 768px) {
+            .gallery-section {
+                grid-template-columns: 1fr;
+            }
+        }
         h2 {
-            color: #1a73e8;
-            border-right: 4px solid #1a73e8;
+            color: var(--primary-color);
+            border-right: 4px solid var(--primary-color);
             padding-right: 12px;
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             font-size: 1.4rem;
         }
         p {
@@ -104,7 +137,7 @@
             background: #f8fafc;
             border: 1px solid #e2e8f0;
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 12px;
         }
         .dispatch-card h3 {
             margin-top: 0;
@@ -124,18 +157,19 @@
             width: 100%;
             padding: 0.75rem;
             border: 1px solid #cbd5e1;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 1rem;
             box-sizing: border-box;
+            background: #fff;
         }
         .submit-btn {
-            background-color: #28a745;
+            background-color: var(--accent-color);
             color: white;
             border: none;
             padding: 0.85rem 1.5rem;
             font-size: 1rem;
             font-weight: bold;
-            border-radius: 6px;
+            border-radius: 8px;
             cursor: pointer;
             width: 100%;
             transition: background 0.3s;
@@ -146,23 +180,24 @@
         }
         .info-box {
             background: #eef2ff;
-            border-right: 4px solid #6366f1;
-            padding: 1.5rem;
-            border-radius: 8px;
+            border-right: 4px solid var(--primary-color);
+            padding: 1.8rem;
+            border-radius: 12px;
             margin-top: 1.5rem;
         }
         .info-box p {
-            margin: 0.5rem 0;
+            margin: 0.6rem 0;
             color: #1e1b4b;
         }
         .map-wrapper {
-            margin-top: 2.5rem;
+            margin-top: 3rem;
         }
         iframe {
             width: 100%;
-            height: 400px;
+            height: 420px;
             border: 0;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
     </style>
 </head>
@@ -175,6 +210,14 @@
 
     <div class="container">
         
+        <h2>معرض صيانة وأعطال الثلاجات</h2>
+        <!-- صور ثلاجات حقيقية عالية الجودة -->
+        <div class="gallery-section">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="صيانة ثلاجات بيكو المنزلية">
+            <img src="https://images.unsplash.com/photo-1571175336579-4d691cf0acbe?auto=format&fit=crop&w=600&q=80" alt="فحص دوائر التبريد للثلاجات">
+            <img src="https://images.unsplash.com/photo-1536338864744-8cb44c12a72b?auto=format&fit=crop&w=600&q=80" alt="أحدث معدات تصليح الثلاجات">
+        </div>
+
         <h2>آلية تشغيل واستقبال البلاغات</h2>
         <p>نعمل من خلال نظام إدارة سحابي متكامل لتلقي أعطال صيانة ثلاجات بيكو BEKO وتوزيعها فورياً على أقرب فني متخصص في نطاق القاهرة. نضمن فحص الجهاز بالمنزل بأحدث أجهزة التشخيص الرقمية دون أي حاجة لنقل الثلاجة.</p>
 
@@ -205,12 +248,12 @@
                     <h3>بيانات نقطة التشغيل والخدمة</h3>
                     <p><strong>اسم النشاط:</strong> صيانة ثلاجات بيكو BEKO</p>
                     <p><strong>العنوان الرئيسي:</strong> X864+M8V، معادي السرايات الغربية، قسم طرة، محافظة القاهرة 4064130</p>
-                    <p><strong>رقم الهاتف:</strong> <a href="tel:+201299945464" dir="ltr" style="color: #1a73e8; font-weight: bold;">+20 129 994 5464</a></p>
+                    <p><strong>رقم الهاتف:</strong> <a href="tel:+201299945464" dir="ltr" style="color: var(--primary-color); font-weight: bold;">+20 129 994 5464</a></p>
                     <p><strong>حالة التشغيل:</strong> يستقبل البلاغات ويقوم بالتوجيه على مدار الساعة (24/7)</p>
                 </div>
 
                 <div style="margin-top: 1.5rem; text-align: center;">
-                    <a href="tel:+201299945464" style="display: block; background: #1a73e8; color: white; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">اتصال مباشر بغرفة العمليات والفنيين</a>
+                    <a href="tel:+201299945464" style="display: block; background: var(--primary-color); color: white; padding: 1.1rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,71,187,0.2);">اتصال مباشر بغرفة العمليات والفنيين</a>
                 </div>
             </div>
         </div>
