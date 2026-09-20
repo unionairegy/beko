@@ -3,239 +3,602 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صيانة ثلاجات بيكو BEKO</title>
-    <meta name="description" content="صيانة ثلاجات بيكو BEKO في معادي السرايات الغربية، طرة، القاهرة. احجز خدمة فحص وإصلاح الثلاجات بالمنزل فوراً على مدار الساعة.">
-    
-    <!-- Schema.org Markup (Exact Match with Map Name & NAP) -->
+
+    <title>Beko Egypt Service Center | صيانة أجهزة بيكو</title>
+
+    <meta name="description"
+          content="Beko Egypt Service Center لخدمات صيانة أجهزة بيكو المنزلية في القاهرة والجيزة، صيانة الغسالات والثلاجات وغسالات الأطباق والأفران والمجففات.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+    <!-- Local Business Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      "name": "صيانة ثلاجات بيكو BEKO",
-      "url": "https://beko.maintenance-eg.net",
-      "telephone": "+201299945464",
+      "@type": "LocalBusiness",
+      "@id": "https://YOUR-DOMAIN.com/#localbusiness",
+      "name": "Beko Egypt Service Center",
+      "url": "https://YOUR-DOMAIN.com/",
+      "telephone": "+201000000000",
+      "description": "خدمات صيانة أجهزة Beko المنزلية في القاهرة والجيزة.",
+      "priceRange": "$$",
+
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "X864+M8V، معادي السرايات الغربية، قسم طرة",
-        "addressLocality": "طرة",
-        "addressRegion": "محافظة القاهرة",
-        "postalCode": "4064130",
+        "streetAddress": "X8C3+8JG, El-Basatin Sharkeya",
+        "addressLocality": "El Basatin",
+        "addressRegion": "Cairo Governorate",
+        "postalCode": "4235214",
         "addressCountry": "EG"
       },
+
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 29.9617319,
-        "longitude": 31.3057941
+        "latitude": 29.9707579,
+        "longitude": 31.3041408
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "priceRange": "$$"
+
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=29.9707579,31.3041408",
+
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cairo"
+        },
+        {
+          "@type": "City",
+          "name": "Giza"
+        }
+      ],
+
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ]
     }
     </script>
 
     <style>
-        :root {
-            --primary-color: #0047bb;
-            --secondary-color: #002d6b;
-            --accent-color: #28a745;
-            --bg-color: #f0f4f8;
-            --card-bg: #ffffff;
-            --text-color: #333333;
+        * {
+            box-sizing: border-box;
         }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f7fafc;
+            color: #17252d;
             line-height: 1.8;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 3.5rem 1rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+        a {
+            text-decoration: none;
         }
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.4rem;
-            font-weight: 700;
-        }
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
-            color: #ffffff;
-            font-weight: 600;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
+
         .container {
-            max-width: 1050px;
-            margin: -2.5rem auto 3rem auto;
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-            position: relative;
+            width: 92%;
+            max-width: 1180px;
+            margin: auto;
         }
-        h2 {
-            color: var(--primary-color);
-            border-right: 4px solid var(--primary-color);
-            padding-right: 12px;
-            margin-top: 2rem;
-            font-size: 1.4rem;
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e4edf1;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        p {
-            font-size: 1.05rem;
-            color: #555;
+
+        .header-inner {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
         }
-        .grid-layout {
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #007da8;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+        }
+
+        nav a {
+            color: #263d47;
+            font-size: 15px;
+        }
+
+        .call-btn {
+            background: #007da8;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 80px 0;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(0, 169, 224, .15), transparent 28%),
+                linear-gradient(180deg, #ffffff 0%, #f4fafd 100%);
+        }
+
+        .hero-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 40px;
+            align-items: center;
         }
-        @media(max-width: 768px) {
-            .grid-layout {
+
+        .badge {
+            display: inline-block;
+            padding: 6px 13px;
+            border-radius: 50px;
+            background: #e6f7fd;
+            color: #007da8;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 1.3;
+            margin: 18px 0;
+        }
+
+        .hero p {
+            color: #60727b;
+            font-size: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #007da8;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #007da8;
+            border: 1px solid #cbdde5;
+        }
+
+        .hero-box {
+            background: white;
+            border: 1px solid #e1ebef;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 15px 35px rgba(0,0,0,.06);
+        }
+
+        .hero-box h2 {
+            margin-top: 0;
+            color: #007da8;
+        }
+
+        .hero-box ul {
+            padding-right: 20px;
+        }
+
+        section {
+            padding: 65px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #6c7f88;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service {
+            background: white;
+            border: 1px solid #e1eaee;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,.035);
+        }
+
+        .service h3 {
+            color: #007da8;
+            margin-top: 0;
+        }
+
+        .service p {
+            color: #667982;
+            margin-bottom: 0;
+        }
+
+        .map-section {
+            background: #ffffff;
+        }
+
+        .map {
+            overflow: hidden;
+            border-radius: 18px;
+            border: 1px solid #dae7ec;
+            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+        }
+
+        .map iframe {
+            display: block;
+            width: 100%;
+            height: 470px;
+            border: 0;
+        }
+
+        .location-data {
+            margin-top: 20px;
+            background: #eff9fd;
+            border: 1px solid #d0edf7;
+            border-radius: 13px;
+            padding: 20px;
+        }
+
+        .location-data strong {
+            color: #007da8;
+        }
+
+        .contact-box {
+            background: #0c789f;
+            color: white;
+            border-radius: 20px;
+            padding: 45px 30px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            font-size: 34px;
+            margin-top: 0;
+        }
+
+        .contact-box .btn-primary {
+            background: white;
+            color: #007da8;
+        }
+
+        footer {
+            background: #102932;
+            color: #dce7eb;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .whatsapp {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background: #25D366;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 7px 20px rgba(0,0,0,.2);
+            z-index: 999;
+        }
+
+        @media (max-width: 850px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-content {
                 grid-template-columns: 1fr;
             }
-        }
-        .dispatch-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            padding: 2rem;
-            border-radius: 12px;
-        }
-        .dispatch-card h3 {
-            margin-top: 0;
-            color: #1e293b;
-            margin-bottom: 1.5rem;
-        }
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #334155;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font-size: 1rem;
-            box-sizing: border-box;
-            background: #fff;
-        }
-        .submit-btn {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 0.85rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.3s;
-            margin-top: 1rem;
-        }
-        .submit-btn:hover {
-            background-color: #218838;
-        }
-        .info-box {
-            background: #eef2ff;
-            border-right: 4px solid var(--primary-color);
-            padding: 1.8rem;
-            border-radius: 12px;
-            margin-top: 1.5rem;
-        }
-        .info-box p {
-            margin: 0.6rem 0;
-            color: #1e1b4b;
-        }
-        .map-wrapper {
-            margin-top: 3rem;
-        }
-        iframe {
-            width: 100%;
-            height: 420px;
-            border: 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .map iframe {
+                height: 380px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>صيانة ثلاجات بيكو BEKO</h1>
-        <p>غرفة العمليات المركزية لتلقي بلاغات صيانة الثلاجات وتوجيه الفرق الفنية بالمنزل</p>
-    </header>
+<header>
+    <div class="container header-inner">
 
-    <div class="container">
-        
-        <h2>آلية تشغيل واستقبال البلاغات</h2>
-        <p>نعمل من خلال نظام إدارة سحابي متكامل لتلقي أعطال صيانة ثلاجات بيكو BEKO وتوزيعها فورياً على أقرب فني متخصص في نطاق القاهرة. نضمن فحص الجهاز بالمنزل بأحدث أجهزة التشخيص الرقمية دون أي حاجة لنقل الثلاجة.</p>
-
-        <div class="grid-layout">
-            <!-- العمود الأول: نموذج تفاعلي لطلب الخدمة -->
-            <div class="dispatch-card">
-                <h3>حجز موعد صيانة فوري</h3>
-                <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك بنجاح، سيتم الاتصال بك خلال دقائق لتأكيد موعد الفحص المنزلي.');">
-                    <div class="form-group">
-                        <label>اسم العميل الكريم</label>
-                        <input type="text" placeholder="اكتب اسمك هنا" required>
-                    </div>
-                    <div class="form-group">
-                        <label>رقم الهاتف للتواصل</label>
-                        <input type="tel" placeholder="01xxxxxxxxx" required>
-                    </div>
-                    <div class="form-group">
-                        <label>وصف العطل في الثلاجة</label>
-                        <textarea rows="3" placeholder="مثال: ضعف التبريد أو توقف الموتور..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">إرسال طلب الصيانة الآن</button>
-                </form>
-            </div>
-
-            <!-- العمود الثاني: بيانات التواصل والتشغيل مطابقة تماماً للخريطة -->
-            <div>
-                <div class="info-box">
-                    <h3>بيانات نقطة التشغيل والخدمة</h3>
-                    <p><strong>اسم النشاط:</strong> صيانة ثلاجات بيكو BEKO</p>
-                    <p><strong>العنوان الرئيسي:</strong> X864+M8V، معادي السرايات الغربية، قسم طرة، محافظة القاهرة 4064130</p>
-                    <p><strong>رقم الهاتف:</strong> <a href="tel:+201299945464" dir="ltr" style="color: var(--primary-color); font-weight: bold;">+20 129 994 5464</a></p>
-                    <p><strong>حالة التشغيل:</strong> يستقبل البلاغات ويقوم بالتوجيه على مدار الساعة (24/7)</p>
-                </div>
-
-                <div style="margin-top: 1.5rem; text-align: center;">
-                    <a href="tel:+201299945464" style="display: block; background: var(--primary-color); color: white; padding: 1.1rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,71,187,0.2);">اتصال مباشر بغرفة العمليات والفنيين</a>
-                </div>
-            </div>
+        <div class="logo">
+            Beko Egypt Service Center
         </div>
 
-        <!-- خريطة الموقع الجغرافي بالامبيد الجديد -->
-        <div class="map-wrapper">
-            <h2>النطاق الجغرافي لخدمات الدعم والتشغيل</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.0892054775823!2d31.305794100000007!3d29.9617319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839a4cca7a4e5%3A0xf73f31b9f40ff1a8!2z2LXZitin2YbYqSDYq9mE2KfYrNin2Kog2KjZitmA2YDZg9mIIEJFS08!5e1!3m2!1sar!2seg!4v1788300339654!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">خدمات الصيانة</a>
+            <a href="#location">الموقع</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+
+        <a class="call-btn" href="tel:+201000000000">
+            اتصل الآن
+        </a>
+
+    </div>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div>
+
+            <span class="badge">
+                خدمات صيانة الأجهزة المنزلية
+            </span>
+
+            <h1>
+                Beko Egypt Service Center
+            </h1>
+
+            <p>
+                خدمات فحص وصيانة أجهزة Beko المنزلية في القاهرة والجيزة،
+                بما يشمل الغسالات والثلاجات وغسالات الأطباق والأفران والمجففات.
+            </p>
+
+            <div class="buttons">
+
+                <a href="tel:+201000000000"
+                   class="btn-primary">
+                    اتصل بالصيانة
+                </a>
+
+                <a href="https://wa.me/201000000000"
+                   class="btn-secondary">
+                    إرسال واتساب
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-box">
+
+            <h2>
+                الأجهزة التي يتم خدمتها
+            </h2>
+
+            <ul>
+                <li>غسالات Beko</li>
+                <li>ثلاجات Beko</li>
+                <li>فريزرات Beko</li>
+                <li>غسالات أطباق Beko</li>
+                <li>أفران وبوتاجازات Beko</li>
+                <li>مجففات Beko</li>
+            </ul>
+
         </div>
 
     </div>
+
+</section>
+
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                خدمات صيانة Beko
+            </h2>
+
+            <p>
+                خدمات فحص وصيانة لمختلف الأجهزة المنزلية.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+            <div class="service">
+                <h3>صيانة غسالات Beko</h3>
+                <p>
+                    فحص أعطال التشغيل والعصر والتصريف وتسريب المياه
+                    ومشاكل برامج الغسيل.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>صيانة ثلاجات Beko</h3>
+                <p>
+                    فحص مشاكل التبريد والتجميد والصوت وتشغيل الثلاجة.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>صيانة غسالات الأطباق</h3>
+                <p>
+                    فحص مشاكل سحب المياه والتصريف والتجفيف وبرامج التشغيل.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>صيانة الأفران</h3>
+                <p>
+                    فحص التسخين والتشغيل وأنظمة التحكم.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>صيانة المجففات</h3>
+                <p>
+                    فحص مشاكل الحرارة والدوران والتجفيف.
+                </p>
+            </div>
+
+
+            <div class="service">
+                <h3>خدمة منزلية</h3>
+                <p>
+                    يمكن إرسال موقع العميل لتنسيق زيارة الصيانة.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="map-section" id="location">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Beko Egypt Service Center
+            </h2>
+
+            <p>
+                البساتين – القاهرة
+            </p>
+
+        </div>
+
+
+        <div class="map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.30171547773!2d31.3041408!3d29.970757900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458391eee36647b%3A0xd31de370e20f6823!2sBeko%20Egypt%20Service%20Center!5e0!3m2!1sen!2seg!4v1789907153248!5m2!1sen!2seg"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Beko Egypt Service Center">
+            </iframe>
+
+        </div>
+
+
+        <div class="location-data">
+
+            <strong>
+                Beko Egypt Service Center
+            </strong>
+
+            <br>
+
+            X8C3+8JG, El-Basatin Sharkeya,
+            El Basatin, Cairo Governorate 4235214
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <h2>
+                اطلب خدمة الصيانة
+            </h2>
+
+            <p>
+                أرسل نوع الجهاز ووصف العطل وموقعك لتنسيق طلب الصيانة.
+            </p>
+
+            <a href="tel:+201000000000"
+               class="btn-primary">
+                اتصل الآن
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<a href="https://wa.me/201000000000"
+   class="whatsapp">
+    واتساب
+</a>
+
+
+<footer>
+
+    <div class="container">
+
+        <strong>
+            Beko Egypt Service Center
+        </strong>
+
+        <br>
+
+        خدمات صيانة الأجهزة المنزلية في القاهرة والجيزة
+
+    </div>
+
+</footer>
 
 </body>
 </html>
