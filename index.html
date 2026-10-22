@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>مركز صيانة بيكو - Beko | تصليح غسالات وثلاجات مدينة نصر والقاهرة</title>
-
-    <meta name="description"
-          content="مركز صيانة بيكو Beko مدينة نصر. فحص وتصليح فوري لأعطال الغسالات والثلاجات: الحلة مش بتلف، تسريب مياه، صوت خبط ورزع في العصر، الموتور بيزن، رش بارومة في شارع مصطفى النحاس، هشام لبيب، الحي الثامن وجميع مناطق القاهرة والجيزة.">
-
+    <meta name="description" content="مركز صيانة بيكو Beko مدينة نصر. فحص وتصليح فوري لأعطال الغسالات والثلاجات: الحلة مش بتلف، تسريب مياه، صوت خبط ورزع في العصر، الموتور بيزن، رش بارومة في شارع مصطفى النحاس، هشام لبيب، الحي الثامن وجميع مناطق القاهرة والجيزة.">
     <meta name="robots" content="index, follow, max-image-preview:large">
-
     <link rel="canonical" href="https://beko.maintenance-eg.net/">
 
     <!-- Local Business Schema NAP-Consistent -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "HomeAndConstructionBusiness",
+      "additionalType": "https://schema.org/RepairService",
       "@id": "https://beko.maintenance-eg.net/#localbusiness",
       "name": "مركز صيانة بيكو - Beko",
       "alternateName": "Beko Egypt Service",
@@ -82,25 +78,22 @@
         * {
             box-sizing: border-box;
         }
-
         body {
             margin: 0;
             font-family: Tahoma, Arial, sans-serif;
             background: #f7fafc;
             color: #17252d;
             line-height: 1.8;
+            padding-bottom: 70px;
         }
-
         a {
             text-decoration: none;
         }
-
         .container {
             width: 92%;
             max-width: 1180px;
             margin: auto;
         }
-
         header {
             background: #ffffff;
             border-bottom: 1px solid #e4edf1;
@@ -108,7 +101,6 @@
             top: 0;
             z-index: 1000;
         }
-
         .header-inner {
             min-height: 75px;
             display: flex;
@@ -116,23 +108,19 @@
             justify-content: space-between;
             gap: 20px;
         }
-
         .logo {
             font-size: 22px;
             font-weight: bold;
             color: #007da8;
         }
-
         nav {
             display: flex;
             gap: 20px;
         }
-
         nav a {
             color: #263d47;
             font-size: 15px;
         }
-
         .call-btn {
             background: #d9381e;
             color: white;
@@ -142,21 +130,18 @@
             display: inline-block;
             font-size: 16px;
         }
-
         .hero {
             padding: 70px 0;
             background:
                 radial-gradient(circle at 10% 10%, rgba(0, 169, 224, .15), transparent 28%),
                 linear-gradient(180deg, #ffffff 0%, #f4fafd 100%);
         }
-
         .hero-content {
             display: grid;
             grid-template-columns: 1.2fr .8fr;
             gap: 40px;
             align-items: center;
         }
-
         .badge {
             display: inline-block;
             padding: 6px 14px;
@@ -166,26 +151,22 @@
             font-weight: bold;
             font-size: 14px;
         }
-
         h1 {
             font-size: 36px;
             line-height: 1.4;
             margin: 18px 0;
             color: #0f242e;
         }
-
         .hero p {
             color: #485c66;
             font-size: 17px;
         }
-
         .buttons {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
             margin-top: 25px;
         }
-
         .btn-primary {
             display: inline-block;
             padding: 15px 30px;
@@ -195,7 +176,6 @@
             color: white;
             font-size: 18px;
         }
-
         .btn-secondary {
             display: inline-block;
             padding: 15px 30px;
@@ -206,7 +186,6 @@
             border: 2px solid #007da8;
             font-size: 18px;
         }
-
         .hero-box {
             background: white;
             border: 1px solid #e1ebef;
@@ -214,51 +193,42 @@
             padding: 28px;
             box-shadow: 0 15px 35px rgba(0,0,0,.06);
         }
-
         .hero-box h2 {
             margin-top: 0;
             color: #007da8;
             font-size: 22px;
         }
-
         .hero-box ul {
             padding-right: 20px;
             margin-bottom: 0;
         }
-
         .hero-box li {
             margin-bottom: 8px;
             font-size: 15px;
             color: #2c424d;
         }
-
         section {
             padding: 65px 0;
         }
-
         .section-title {
             text-align: center;
             max-width: 820px;
             margin: 0 auto 35px;
         }
-
         .section-title h2 {
             font-size: 32px;
             margin-bottom: 8px;
             color: #102932;
         }
-
         .section-title p {
             color: #6c7f88;
             font-size: 16px;
         }
-
         .services {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
-
         .service {
             background: white;
             border: 1px solid #e1eaee;
@@ -266,31 +236,26 @@
             padding: 25px;
             box-shadow: 0 6px 18px rgba(0,0,0,.035);
         }
-
         .service h3 {
             color: #007da8;
             margin-top: 0;
             font-size: 20px;
         }
-
         .service p {
             color: #556972;
             margin-bottom: 0;
             font-size: 15px;
         }
-
         .trouble-section {
             background: #ffffff;
             border-top: 1px solid #e8eff3;
             border-bottom: 1px solid #e8eff3;
         }
-
         .trouble-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
-
         .trouble-card {
             background: #fdfefe;
             border: 1px solid #e2edf2;
@@ -298,24 +263,20 @@
             padding: 24px;
             border-radius: 10px;
         }
-
         .trouble-card h4 {
             margin: 0 0 10px;
             color: #172f3a;
             font-size: 18px;
         }
-
         .trouble-card p {
             margin: 0;
             color: #566870;
             font-size: 15px;
         }
-
         .article-section {
             background: #fdfefe;
             border-bottom: 1px solid #e5eff3;
         }
-
         .content-block {
             background: #ffffff;
             border: 1px solid #e1eaee;
@@ -324,37 +285,31 @@
             margin-bottom: 25px;
             box-shadow: 0 4px 12px rgba(0,0,0,.02);
         }
-
         .content-block h3 {
             color: #007da8;
             margin-top: 0;
             font-size: 22px;
         }
-
         .content-block p {
             color: #435862;
             font-size: 16px;
             margin-bottom: 12px;
         }
-
         .map-section {
             background: #f7fafc;
         }
-
         .map {
             overflow: hidden;
             border-radius: 18px;
             border: 1px solid #dae7ec;
             box-shadow: 0 10px 30px rgba(0,0,0,.05);
         }
-
         .map iframe {
             display: block;
             width: 100%;
             height: 450px;
             border: 0;
         }
-
         .location-data {
             margin-top: 20px;
             background: #eff9fd;
@@ -364,37 +319,31 @@
             font-size: 15px;
             line-height: 2;
         }
-
         .location-data strong {
             color: #007da8;
             font-size: 17px;
         }
-
         .booking-section {
             background: linear-gradient(135deg, #0b688b 0%, #084c66 100%);
             color: white;
             padding: 70px 0;
         }
-
         .booking-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             align-items: center;
         }
-
         .booking-info h2 {
             font-size: 34px;
             margin-top: 0;
             line-height: 1.3;
         }
-
         .booking-info p {
             font-size: 17px;
             color: #dbeaf0;
             margin-bottom: 20px;
         }
-
         .booking-card {
             background: #ffffff;
             border-radius: 16px;
@@ -402,7 +351,6 @@
             color: #1a2a30;
             box-shadow: 0 20px 45px rgba(0,0,0,0.2);
         }
-
         .booking-card h3 {
             margin-top: 0;
             margin-bottom: 8px;
@@ -410,18 +358,15 @@
             font-size: 22px;
             text-align: center;
         }
-
         .booking-card p.subtitle {
             text-align: center;
             font-size: 14px;
             color: #72848c;
             margin-bottom: 22px;
         }
-
         .form-group {
             margin-bottom: 16px;
         }
-
         .form-group label {
             display: block;
             font-size: 14px;
@@ -429,7 +374,6 @@
             margin-bottom: 6px;
             color: #2b3e47;
         }
-
         .form-group input, 
         .form-group select, 
         .form-group textarea {
@@ -441,7 +385,6 @@
             font-family: inherit;
             background: #fbfdfd;
         }
-
         .form-group input:focus, 
         .form-group select:focus, 
         .form-group textarea:focus {
@@ -449,7 +392,6 @@
             border-color: #007da8;
             background: #fff;
         }
-
         .form-submit-btn {
             width: 100%;
             background: #d9381e;
@@ -462,59 +404,81 @@
             cursor: pointer;
             transition: background .2s;
         }
-
         .form-submit-btn:hover {
             background: #b82d16;
         }
-
         footer {
             background: #102932;
             color: #dce7eb;
-            padding: 35px 0;
+            padding: 40px 0 25px;
             text-align: center;
             font-size: 15px;
         }
+        .disclaimer-text {
+            font-size: 13px;
+            color: #8da4ae;
+            margin-top: 20px;
+            line-height: 1.6;
+            border-top: 1px solid #1c3c47;
+            padding-top: 15px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        .call-float {
+        /* Floating Contact Action Bar */
+        .float-bar {
             position: fixed;
-            left: 20px;
-            bottom: 20px;
-            background: #d9381e;
-            color: white;
-            padding: 14px 26px;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 9999;
+            width: 92%;
+            max-width: 440px;
+        }
+        .float-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 12px 16px;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 16px;
-            box-shadow: 0 8px 25px rgba(217, 56, 30, 0.4);
-            z-index: 9999;
+            font-size: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: center;
+            gap: 6px;
+        }
+        .float-call {
+            background: #d9381e;
+            color: white;
+        }
+        .float-whatsapp {
+            background: #25d366;
+            color: white;
         }
 
         @media (max-width: 850px) {
             nav {
                 display: none;
             }
-
             .hero-content, 
             .booking-wrapper, 
             .services, 
             .trouble-grid {
                 grid-template-columns: 1fr;
             }
-
             h1 {
                 font-size: 28px;
             }
-
             .map iframe {
                 height: 340px;
             }
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -522,7 +486,6 @@
         <div class="logo">
             مركز صيانة بيكو - Beko
         </div>
-
         <nav>
             <a href="#home">الرئيسية</a>
             <a href="#troubles">الأعطال الشائعة</a>
@@ -530,13 +493,11 @@
             <a href="#booking">طلب فحص منزلي</a>
             <a href="#location">الفرع والخريطة</a>
         </nav>
-
         <a class="call-btn" href="tel:+201141298659">
             اتصل بالفني: 01141298659
         </a>
     </div>
 </header>
-
 
 <section class="hero" id="home">
     <div class="container hero-content">
@@ -544,15 +505,12 @@
             <span class="badge">
                 خدمة فحص وكشف فوري بالمنزل | مدينة نصر ومحيطها
             </span>
-
             <h1>
                 مركز صيانة بيكو (Beko) - تصليح غسالات وثلاجات مدينة نصر والقاهرة
             </h1>
-
             <p>
                 عطل مفاجئ في جهاز بيكو المنزلي؟ الحلة ساقطة ومش بتلف، تسريب ميه مغرق المطبخ، الفريزر مكون ثلج ومش بيبرد، صوت خبط ورزع أثناء العصر، أو ريحة شياط؟ نتحرك فوراً من فرعنا بشارع مصطفى النحاس وهشام لبيب لخدمتك في نفس اليوم.
             </p>
-
             <div class="buttons">
                 <a href="tel:+201141298659" class="btn-primary">
                     اتصل الآن: 01141298659
@@ -562,7 +520,6 @@
                 </a>
             </div>
         </div>
-
         <div class="hero-box">
             <h2>أعطال بيكو التي نصلحها في المنزل فوراً:</h2>
             <ul>
@@ -578,14 +535,12 @@
     </div>
 </section>
 
-
 <section class="trouble-section" id="troubles">
     <div class="container">
         <div class="section-title">
             <h2>بلاغات الأعطال والمشاكل الطارئة لأجهزة Beko</h2>
             <p>أكثر المشاكل التي يتم التعامل معها في مدينة نصر والمناطق المجاورة</p>
         </div>
-
         <div class="trouble-grid">
             <div class="trouble-card">
                 <h4>الغسالة بتكهرب أو بتنزل ميه على الأرض؟</h4>
@@ -593,21 +548,18 @@
                     بيكون سببه في الغالب قطع في جوان الباب، شرخ في خراطيم الصرف، أو تسريب واصل لأسلاك السخان والموتور تحت الحلة. بنفحص العزل الكهربائي ونقضي على مصدر التسريب فوراً.
                 </p>
             </div>
-
             <div class="trouble-card">
                 <h4>حلة الغسالة مش بتلف والموتور بيزن؟</h4>
                 <p>
                     تلف سير الحلة، انهيار رولمان البلي والمساعدين، أو عطل مكثف البدء والكارتة. بنركب طقم بلي أصلي مع المساعدين لمنع خبط الحلة نهائياً واستعادة الهدوء.
                 </p>
             </div>
-
             <div class="trouble-card">
                 <h4>الثلاجة بتنقط ميه جوه ومش بتبرد تحت؟</h4>
                 <p>
                     انسداد مجرى صرف دورة النوفروست، تراكم الثلج على السخان والمروحة، أو تسريب فريون. بنسلك مسار الهواء ونفحص الهيتر لرجوع البرودة الطبيعية لجميع الرفوف.
                 </p>
             </div>
-
             <div class="trouble-card">
                 <h4>صدأ وبارومة متآكلة في بودي وقاعدة الغسالة؟</h4>
                 <p>
@@ -618,208 +570,16 @@
     </div>
 </section>
 
-
 <section class="article-section" id="details">
     <div class="container">
         <div class="section-title">
             <h2>دليل التعامل مع أعطال أجهزة بيكو المنزلية</h2>
             <p>معلومات فنية تساعدك على معرفة سبب العطل قبل وصول الفني إليك</p>
         </div>
-
         <div class="content-block">
             <h3>أسباب اهتزاز وخبط غسالة بيكو أثناء العصر (Spinning)</h3>
             <p>
                 كثير من المستخدمين يشتكون من أن الغسالة بتتحرك من مكانها أو بتصدر صوت ضرب يشبه المطرقة أول ما تبدأ مرحلة التنشيف والعصر. هذا العطل لا يجب إهماله لأنه قد يؤدي لكسر صليبة الحلة أو تمزق الخراطيم الداخلية.
             </p>
             <p>
-                <strong>الأسباب الشائعة:</strong> ضعف مساعدين الغسالة الهيدروليكية، تآكل رولمان البلي الداخلي، أو عدم ضبط أرجل الاتزان على أرضية مستوية. يقوم الفني بالكشف على المساعدين وتغيير التالف منها وتثبيت الحلة على المساعدات الأصلية.
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h3>توقف تصريف المياه وظهور رموز الأعطال (رموز الخطأ في الغسالات)</h3>
-            <p>
-                عندما تظل المياه محبوسة داخل حلة الغسالة وترفض طرد المياه لفتح الباب، يكون العطل إما انسداد في فلتر الطرد السفلي نتيجة وجود عملات معدنية أو دبابيس، أو احتراق ملف طلمبة الطرد (Drain Pump).
-            </p>
-            <p>
-                ينصح في هذه الحالة بعدم محاولة كسر مقبض الباب بالقوة، وفصل التيار الكهربائي فوراً، ثم الاتصال بالفني لتفريغ المياه بأمان وفحص طلمبة الصرف واختبار لوحة التحكم.
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h3>ضعف التبريد في كابينة ثلاجة بيكو وتراكم الثلج في الفريزر</h3>
-            <p>
-                إذا لاحظت أن الفريزر يجمد الأطعمة بشكل طبيعي بينما الكابينة السفلية دافئة والأكل يفسد سريعاً، فالمشكلة تكمن في دائرة إذابة الثلج التلقائية (Defrost System). الثلج يسد ممرات الهواء ويمنع وصول التبريد للأسفل.
-            </p>
-            <p>
-                نقوم بفحص حساس درجة الحرارة (Sensor)، هيتر إذابة الثلج، الثرموفيوز، ومروحة توزيع الهواء للتأكد من تدفق البرودة لجميع أجزاء الثلاجة دون تراكم كتل ثلجية.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<section id="services">
-    <div class="container">
-        <div class="section-title">
-            <h2>الخدمات الفنية المتاحة لأجهزة بيكو</h2>
-            <p>تغطية كاملة لكافة أعمال الإصلاح المنزلي والصيانة الوقائية</p>
-        </div>
-
-        <div class="services">
-            <div class="service">
-                <h3>صيانة غسالات ملابس بيكو</h3>
-                <p>
-                    معالجة رموز الخطأ، تغيير طلمبة الطرد، تصليح لوك الباب، ضبط مساعدين الحلة وتغيير السيور والكارتات الإلكترونية.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>صيانة ثلاجات وديب فريزر</h3>
-                <p>
-                    شحن فريون، استبدال الكمبروسر التالف، ضبط دائرة النوفروست، علاج تسريب الميه وتغيير كوتشة الأبواب.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>صيانة غسالات الأطباق</h3>
-                <p>
-                    تسليك الرشاشات، علاج عدم سحب المسحوق أو ضعف تسخين المياه، وتصليح مواتير السحب والصرف.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>سمكرة ورش البارومة</h3>
-                <p>
-                    تجديد الصاج الخارجي، إزالة الصدأ والقشور المعدنية، دهان فرن معزول يحمي جسم الغسالة لسنوات طويلة.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>تغيير قطع الغيار التالفة</h3>
-                <p>
-                    توفير بدائل مطابقة بنفس مواصفات الموديل للمحافظة على كفاءة الجهاز وضمان استقرار التشغيل.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>زيارات منزلية فورية</h3>
-                <p>
-                    فنيين مجهزين بأدوات الكشف الدقيق والتحرك السريع داخل مدينة نصر وكافة أحياء القاهرة والجيزة في نفس اليوم.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- سكشن وفورمة الحجز وربط الإيميل -->
-<section class="booking-section" id="booking">
-    <div class="container">
-        <div class="booking-wrapper">
-            <div class="booking-info">
-                <h2>احجز فني صيانة لمنزلك الآن</h2>
-                <p>
-                    سجل بيانات العطل وعنوانك في النموذج المقابل، وسيتم استلام طلبك ومتابعتك هاتفياً لتأكيد ميعاد الزيارة ومعرفة التفاصيل الفنية فوراً.
-                </p>
-                <p>
-                    أو يمكنك الاتصال المباشر على مدار اليوم للتنسيق الفوري مع الفني المختص:
-                </p>
-                <a href="tel:+201141298659" class="btn-primary" style="display:inline-block; margin-top: 10px;">
-                    اتصال مباشر: 01141298659
-                </a>
-            </div>
-
-            <div class="booking-card">
-                <h3>طلب زيارة فحص منزلي</h3>
-                <p class="subtitle">يتم توجيه البلاغ لمسؤول الصيانة مباشرة</p>
-
-                <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="طلب صيانة جديد - مركز صيانة بيكو مدينة نصر">
-                    <input type="hidden" name="_template" value="table">
-
-                    <div class="form-group">
-                        <label for="name">الاسم بالكامل:</label>
-                        <input type="text" id="name" name="الاسم" placeholder="اكتب اسم العميل" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">رقم التليفون للتواصل:</label>
-                        <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="device">نوع الجهاز:</label>
-                        <select id="device" name="نوع_الجهاز" required>
-                            <option value="غسالة ملابس بيكو">غسالة ملابس بيكو</option>
-                            <option value="ثلاجة بيكو">ثلاجة بيكو</option>
-                            <option value="ديب فريزر بيكو">ديب فريزر بيكو</option>
-                            <option value="غسالة أطباق بيكو">غسالة أطباق بيكو</option>
-                            <option value="مجفف ملابس بيكو">مجفف ملابس بيكو</option>
-                            <option value="فرن / بوتاجاز بيكو">فرن / بوتاجاز بيكو</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="area">المنطقة / الحي السكني:</label>
-                        <input type="text" id="area" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر / مصطفى النحاس / الحي الثامن / المعادي" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="issue">وصف مشكلة العطل:</label>
-                        <textarea id="issue" name="وصف_العطل" rows="3" placeholder="مثال: الحلة مش بتلف وفيه تسريب ميه، أو الثلاجة مش بتسقع تحت..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="form-submit-btn">
-                        إرسال طلب الصيانة الآن
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="map-section" id="location">
-    <div class="container">
-        <div class="section-title">
-            <h2>موقع مركز صيانة بيكو - Beko</h2>
-            <p>شارع هشام لبيب، متفرع من مصطفى النحاس، المنطقة الثامنة، مدينة نصر</p>
-        </div>
-
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3602426098987!2d31.3541068!3d30.055206800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f0139bb5003%3A0x361f4574adc02509!2z2YXYsdmD2LIg2LXZitin2YbYqSDYqNmK2YPZiCAtIEJla28!5e0!3m2!1sen!2seg!4v1791929258234!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="مركز صيانة بيكو مدينة نصر"></iframe>
-        </div>
-
-        <div class="location-data">
-            <strong>مركز صيانة بيكو - Beko</strong>
-            <br>
-            <strong>العنوان:</strong> شارع هشام لبيب، متفرع من Mostafa El-Nahaas، المنطقة الثامنة (Al Manteqah Ath Thamenah)، مدينة نصر، محافظة القاهرة 11765
-            <br>
-            <strong>الهاتف المباشر:</strong> 01141298659
-            <br>
-            <strong>نطاق الزيارات المنزلية السريعة:</strong> مدينة نصر، المنطقة الثامنة، مصطفى النحاس، عباس العقاد، مكرم عبيد، الحي السابع، الحي العاشر، مصر الجديدة، حدائق القبة، سراي القبة، مصر والسودان، المعادي، البساتين، التجمع، الهرم، فيصل وجميع أنحاء القاهرة والجيزة.
-        </div>
-    </div>
-</section>
-
-
-<!-- زر الاتصال العائم أسفل الشاشة للموبايل -->
-<a href="tel:+201141298659" class="call-float">
-    اتصل بالفني: 01141298659
-</a>
-
-
-<footer>
-    <div class="container">
-        <strong>مركز صيانة بيكو - Beko</strong>
-        <br>
-        شارع هشام لبيب متفرع من مصطفى النحاس، المنطقة الثامنة، مدينة نصر، القاهرة
-        <br>
-        خدمة منزلية لفحص وإصلاح الغسالات والثلاجات والديب فريزر | للحجز والاستفسار: 01141298659
-    </div>
-</footer>
-
-</body>
-</html>
+                <strong>الأسباب الشائعة:</strong> ضعف مساعدين
