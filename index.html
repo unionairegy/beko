@@ -8,67 +8,103 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://beko.maintenance-eg.net/">
 
-    <!-- Local Business Schema NAP-Consistent -->
+    <!-- Local Business & FAQ Schema Entity Linking (SEO Power-Up) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "HomeAndConstructionBusiness",
-      "additionalType": "https://schema.org/RepairService",
-      "@id": "https://beko.maintenance-eg.net/#localbusiness",
-      "name": "مركز صيانة أجهزة بيكو",
-      "alternateName": "Beko Egypt Service",
-      "url": "https://beko.maintenance-eg.net/",
-      "telephone": "+201156174546",
-      "email": "ed3mnyit@gmail.com",
-      "description": "مركز فحص وصيانة أجهزة بيكو المنزلية (غسالات، ثلاجات، ديب فريزر، غسالات أطباق)، تصليح فوري بالمنزل وتوفير قطع الغيار ومعالجة البارومة.",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع هشام لبيب، متفرع من Mostafa El-Nahaas",
-        "addressLocality": "المنطقة الثامنة، مدينة نصر",
-        "addressRegion": "محافظة القاهرة",
-        "postalCode": "11765",
-        "addressCountry": "EG"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.0552068,
-        "longitude": 31.3541068
-      },
-      "hasMap": "https://www.google.com/maps?cid=3899898083981829385",
-      "areaServed": [
-        "مدينة نصر",
-        "المنطقة الثامنة",
-        "شارع مصطفى النحاس",
-        "شارع هشام لبيب",
-        "الحي السابع",
-        "مصر الجديدة",
-        "مصر والسودان",
-        "حدائق القبة",
-        "سراي القبة",
-        "الزيتون",
-        "المعادي",
-        "البساتين",
-        "الهرم",
-        "فيصل",
-        "التجمع الخامس",
-        "القاهرة",
-        "الجيزة"
-      ],
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Saturday",
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
+          "@type": "HomeAndConstructionBusiness",
+          "additionalType": "https://schema.org/RepairService",
+          "@id": "https://beko.maintenance-eg.net/#localbusiness",
+          "name": "مركز صيانة أجهزة بيكو",
+          "alternateName": "Beko Egypt Service",
+          "url": "https://beko.maintenance-eg.net/",
+          "telephone": "+201156174546",
+          "email": "ed3mnyit@gmail.com",
+          "description": "مركز فحص وصيانة أجهزة بيكو المنزلية (غسالات، ثلاجات، ديب فريزر، غسالات أطباق)، تصليح فوري بالمنزل وتوفير قطع الغيار ومعالجة البارومة.",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "شارع هشام لبيب، متفرع من Mostafa El-Nahaas",
+            "addressLocality": "المنطقة الثامنة، مدينة نصر",
+            "addressRegion": "محافظة القاهرة",
+            "postalCode": "11765",
+            "addressCountry": "EG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 30.0552068,
+            "longitude": 31.3541068
+          },
+          "hasMap": "https://www.google.com/maps?cid=16499824673663673078",
+          "sameAs": [
+            "https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%B5%D9%8A%D8%A7%D9%86%D8%A9+%D8%A7%D8%AC%D9%87%D8%B2%D8%A9+%D8%A8%D9%8A%D9%83%D9%88%E2%80%AD/data=!4m2!3m1!1s0x0:0xe50f56784e14ca76?sa=X&ved=1t:2428&ictx=111"
           ],
-          "opens": "08:00",
-          "closes": "23:30"
+          "areaServed": [
+            "مدينة نصر",
+            "المنطقة الثامنة",
+            "شارع مصطفى النحاس",
+            "شارع هشام لبيب",
+            "الحي السابع",
+            "مصر الجديدة",
+            "مصر والسودان",
+            "حدائق القبة",
+            "سراي القبة",
+            "الزيتون",
+            "المعادي",
+            "البساتين",
+            "الهرم",
+            "فيصل",
+            "التجمع الخامس",
+            "القاهرة",
+            "الجيزة"
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Saturday",
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "08:00",
+              "closes": "23:30"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ما هي مناطق التغطية لخدمة صيانة أجهزة بيكو المنزلي؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نقدم خدمة الفحص والصيانة الفورية بالمنزل لجميع أحياء مدينة نصر (شارع مصطفى النحاس، هشام لبيب، الحي الثامن، الحي السابع، عباس العقاد، مكرم عبيد) وكافة مناطق القاهرة الكبرى والجيزة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "هل تتم صيانة وإصلاح غسالات وثلاجات بيكو في المنزل دون نقل الجهاز؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم، تمتلك فرقنا الفنية التجهيزات والأدوات اللازمة لفحص وإصلاح كافة أعطال غسالات الملابس، الثلاجات، وديب فريزر بيكو بالمنزل في نفس الزيارة بنسبة كبيرة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "كيف يمكنني طلب فني صيانة بيكو بشكل فوري؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "يمكنك تسجيل بلاغ الصيانة مباشرة عبر نموذج الحجز السريع في الموقع أو التواصل الفوري عبر زر الواتساب المخصص لتوجيه أقرب فني لمنزلك."
+              }
+            }
+          ]
         }
       ]
     }
@@ -295,6 +331,37 @@
             font-size: 16px;
             margin-bottom: 12px;
         }
+        
+        /* FAQ Section Styling for SEO */
+        .faq-section {
+            background: #f4fafd;
+            border-bottom: 1px solid #e1eaee;
+        }
+        .faq-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+        .faq-item {
+            background: white;
+            border: 1px solid #d8e5ec;
+            border-radius: 10px;
+            padding: 20px 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.02);
+        }
+        .faq-item h3 {
+            color: #007da8;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            color: #485c66;
+            margin: 0;
+            font-size: 15px;
+        }
+
         .map-section {
             background: #f7fafc;
         }
@@ -508,6 +575,7 @@
             <a href="#home">الرئيسية</a>
             <a href="#troubles">الأعطال الشائعة</a>
             <a href="#details">دليل المشاكل</a>
+            <a href="#faq">الأسئلة الشائعة</a>
             <a href="#booking">طلب فحص منزلي</a>
             <a href="#location">الفرع والخريطة</a>
         </nav>
@@ -671,7 +739,31 @@
     </div>
 </section>
 
-<!-- سكشن وفورمة الحجز الكبيرة العريضة (بنفس ستايل يونيون المرفق) -->
+<!-- سكشن الأسئلة الشائعة (FAQ Section for SEO Dominance) -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>الأسئلة الشائعة حول صيانة أجهزة بيكو</h2>
+            <p>إجابات وافية لأبرز استفسارات العملاء حول خدمات الإصلاح المنزلي</p>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>ما هي مناطق التغطية لخدمة صيانة أجهزة بيكو المنزلي؟</h3>
+                <p>نقدم خدمة الفحص والصيانة الفورية بالمنزل لجميع أحياء مدينة نصر (شارع مصطفى النحاس، هشام لبيب، الحي الثامن، الحي السابع، عباس العقاد، مكرم عبيد) وكافة مناطق القاهرة الكبرى والجيزة.</p>
+            </div>
+            <div class="faq-item">
+                <h3>هل تتم صيانة وإصلاح غسالات وثلاجات بيكو في المنزل دون نقل الجهاز؟</h3>
+                <p>نعم، تمتلك فرقنا الفنية التجهيزات والأدوات اللازمة لفحص وإصلاح كافة أعطال غسالات الملابس، الثلاجات، وديب فريزر بيكو بالمنزل في نفس الزيارة بنسبة كبيرة.</p>
+            </div>
+            <div class="faq-item">
+                <h3>كيف يمكنني طلب فني صيانة بيكو بشكل فوري؟</h3>
+                <p>يمكنك تسجيل بلاغ الصيانة مباشرة عبر نموذج الحجز السريع في الموقع أو التواصل الفوري عبر زر الواتساب المخصص لتوجيه أقرب فني لمنزلك.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- سكشن وفورمة الحجز الكبيرة العريضة -->
 <section class="booking-section" id="booking">
     <div class="container">
         <div class="booking-container">
