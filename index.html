@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز صيانة بيكو - Beko | تصليح غسالات وثلاجات مدينة نصر والقاهرة</title>
-    <meta name="description" content="مركز صيانة بيكو Beko مدينة نصر. فحص وتصليح فوري لأعطال الغسالات والثلاجات: الحلة مش بتلف، تسريب مياه، صوت خبط ورزع في العصر، الموتور بيزن، رش بارومة في شارع مصطفى النحاس، هشام لبيب، الحي الثامن وجميع مناطق القاهرة والجيزة.">
+    <title>مركز صيانة أجهزة بيكو - Beko | تصليح غسالات وثلاجات مدينة نصر والقاهرة</title>
+    <meta name="description" content="مركز صيانة أجهزة بيكو Beko مدينة نصر. فحص وتصليح فوري لأعطال الغسالات والثلاجات: الحلة مش بتلف، تسريب مياه، صوت خبط ورزع في العصر، الموتور بيزن، رش بارومة في شارع مصطفى النحاس، هشام لبيب، الحي الثامن وجميع مناطق القاهرة والجيزة.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://beko.maintenance-eg.net/">
 
@@ -15,10 +15,10 @@
       "@type": "HomeAndConstructionBusiness",
       "additionalType": "https://schema.org/RepairService",
       "@id": "https://beko.maintenance-eg.net/#localbusiness",
-      "name": "مركز صيانة بيكو - Beko",
+      "name": "مركز صيانة أجهزة بيكو",
       "alternateName": "Beko Egypt Service",
       "url": "https://beko.maintenance-eg.net/",
-      "telephone": "+201141298659",
+      "telephone": "+201156174546",
       "email": "ed3mnyit@gmail.com",
       "description": "مركز فحص وصيانة أجهزة بيكو المنزلية (غسالات، ثلاجات، ديب فريزر، غسالات أطباق)، تصليح فوري بالمنزل وتوفير قطع الغيار ومعالجة البارومة.",
       "priceRange": "$$",
@@ -121,8 +121,8 @@
             color: #263d47;
             font-size: 15px;
         }
-        .call-btn {
-            background: #d9381e;
+        .whatsapp-btn {
+            background: #25d366;
             color: white;
             padding: 12px 24px;
             border-radius: 8px;
@@ -172,7 +172,7 @@
             padding: 15px 30px;
             border-radius: 9px;
             font-weight: bold;
-            background: #d9381e;
+            background: #25d366;
             color: white;
             font-size: 18px;
         }
@@ -259,7 +259,7 @@
         .trouble-card {
             background: #fdfefe;
             border: 1px solid #e2edf2;
-            border-right: 4px solid #d9381e;
+            border-right: 4px solid #25d366;
             padding: 24px;
             border-radius: 10px;
         }
@@ -364,6 +364,13 @@
             color: #72848c;
             margin-bottom: 22px;
         }
+        
+        /* Form Grid styling matching reference */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
         .form-group {
             margin-bottom: 16px;
         }
@@ -407,6 +414,12 @@
         .form-submit-btn:hover {
             background: #b82d16;
         }
+        .form-note {
+            text-align: center;
+            font-size: 12px;
+            color: #72848c;
+            margin-top: 12px;
+        }
         footer {
             background: #102932;
             color: #dce7eb;
@@ -426,7 +439,7 @@
             margin-right: auto;
         }
 
-        /* Floating Contact Action Bar */
+        /* Floating Contact Action Bar (WhatsApp Only) */
         .float-bar {
             position: fixed;
             bottom: 15px;
@@ -436,7 +449,7 @@
             gap: 12px;
             z-index: 9999;
             width: 92%;
-            max-width: 440px;
+            max-width: 300px;
         }
         .float-bar a {
             flex: 1;
@@ -451,10 +464,6 @@
             justify-content: center;
             gap: 6px;
         }
-        .float-call {
-            background: #d9381e;
-            color: white;
-        }
         .float-whatsapp {
             background: #25d366;
             color: white;
@@ -467,7 +476,8 @@
             .hero-content, 
             .booking-wrapper, 
             .services, 
-            .trouble-grid {
+            .trouble-grid,
+            .form-row {
                 grid-template-columns: 1fr;
             }
             h1 {
@@ -484,7 +494,7 @@
 <header>
     <div class="container header-inner">
         <div class="logo">
-            مركز صيانة بيكو - Beko
+            مركز صيانة أجهزة بيكو
         </div>
         <nav>
             <a href="#home">الرئيسية</a>
@@ -493,8 +503,8 @@
             <a href="#booking">طلب فحص منزلي</a>
             <a href="#location">الفرع والخريطة</a>
         </nav>
-        <a class="call-btn" href="tel:+201141298659">
-            اتصل بالفني: 01141298659
+        <a class="whatsapp-btn" href="https://wa.me/201156174546" target="_blank">
+            💬 واتساب فني
         </a>
     </div>
 </header>
@@ -506,14 +516,14 @@
                 خدمة فحص وكشف فوري بالمنزل | مدينة نصر ومحيطها
             </span>
             <h1>
-                مركز صيانة بيكو (Beko) - تصليح غسالات وثلاجات مدينة نصر والقاهرة
+                مركز صيانة أجهزة بيكو - تصليح غسالات وثلاجات مدينة نصر والقاهرة
             </h1>
             <p>
                 عطل مفاجئ في جهاز بيكو المنزلي؟ الحلة ساقطة ومش بتلف، تسريب ميه مغرق المطبخ، الفريزر مكون ثلج ومش بيبرد، صوت خبط ورزع أثناء العصر، أو ريحة شياط؟ نتحرك فوراً من فرعنا بشارع مصطفى النحاس وهشام لبيب لخدمتك في نفس اليوم.
             </p>
             <div class="buttons">
-                <a href="tel:+201141298659" class="btn-primary">
-                    اتصل الآن: 01141298659
+                <a href="https://wa.me/201156174546" target="_blank" class="btn-primary">
+                    💬 تواصل عبر واتساب
                 </a>
                 <a href="#booking" class="btn-secondary">
                     تسجيل طلب فحص أونلاين
@@ -653,7 +663,7 @@
     </div>
 </section>
 
-<!-- سكشن وفورمة الحجز وربط الإيميل -->
+<!-- سكشن وفورمة الحجز بالمقاس والتصميم الجديد -->
 <section class="booking-section" id="booking">
     <div class="container">
         <div class="booking-wrapper">
@@ -663,16 +673,16 @@
                     سجل بيانات العطل وعنوانك في النموذج المقابل، وسيتم استلام طلبك ومتابعتك هاتفياً لتأكيد ميعاد الزيارة ومعرفة التفاصيل الفنية فوراً.
                 </p>
                 <p>
-                    أو يمكنك الاتصال المباشر على مدار اليوم للتنسيق الفوري مع الفني المختص:
+                    أو يمكنك التواصل المباشر عبر الواتساب على مدار اليوم للتنسيق الفوري مع الفني المختص:
                 </p>
-                <a href="tel:+201141298659" class="btn-primary" style="display:inline-block; margin-top: 10px;">
-                    اتصال مباشر: 01141298659
+                <a href="https://wa.me/201156174546" target="_blank" class="btn-primary" style="display:inline-block; margin-top: 10px; background: #25d366;">
+                    💬 محادثة واتساب فنية
                 </a>
             </div>
 
             <div class="booking-card">
-                <h3>طلب زيارة فحص منزلي</h3>
-                <p class="subtitle">يتم توجيه البلاغ لمسؤول الصيانة مباشرة</p>
+                <h3>تسجيل بلاغ صيانة منزلية فورية</h3>
+                <p class="subtitle">⚡ استجابة سريعة لجميع مناطق القاهرة والجيزة</p>
 
                 <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
@@ -680,36 +690,55 @@
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_next" value="https://beko.maintenance-eg.net/">
 
-                    <div class="form-group">
-                        <label for="name">الاسم بالكامل:</label>
-                        <input type="text" id="name" name="الاسم" placeholder="اكتب اسم العميل" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف للتواصل *</label>
+                            <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">الاسم بالكامل *</label>
+                            <input type="text" id="name" name="الاسم" placeholder="اكتب اسمك الكريم" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">رقم التليفون للتواصل:</label>
-                        <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="time">الموعد المفضل للزيارة *</label>
+                            <select id="time" name="الموعد_المفضل" required>
+                                <option value="طوارئ / بأسرع وقت اليوم">⚡ طوارئ / بأسرع وقت اليوم</option>
+                                <option value="فترة صباحية">الفترة الصباحية</option>
+                                <option value="فترة مسائية">الفترة المسائية</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="device">نوع الجهاز المعطل *</label>
+                            <select id="device" name="نوع_الجهاز" required>
+                                <option value="غسالة ملابس بيكو">غسالة ملابس بيكو</option>
+                                <option value="ثلاجة بيكو">ثلاجة بيكو</option>
+                                <option value="ديب فريزر بيكو">ديب فريزر بيكو</option>
+                                <option value="غسالة أطباق بيكو">غسالة أطباق بيكو</option>
+                                <option value="مجفف ملابس بيكو">مجفف ملابس بيكو</option>
+                                <option value="فرن / بوتاجاز بيكو">فرن / بوتاجاز بيكو</option>
+                            </select>
+                        </div>
                     </div>
+
                     <div class="form-group">
-                        <label for="device">نوع الجهاز:</label>
-                        <select id="device" name="نوع_الجهاز" required>
-                            <option value="غسالة ملابس بيكو">غسالة ملابس بيكو</option>
-                            <option value="ثلاجة بيكو">ثلاجة بيكو</option>
-                            <option value="ديب فريزر بيكو">ديب فريزر بيكو</option>
-                            <option value="غسالة أطباق بيكو">غسالة أطباق بيكو</option>
-                            <option value="مجفف ملابس بيكو">مجفف ملابس بيكو</option>
-                            <option value="فرن / بوتاجاز بيكو">فرن / بوتاجاز بيكو</option>
-                        </select>
+                        <label for="area">العنوان بالتفصيل (القاهرة أو الجيزة) *</label>
+                        <input type="text" id="area" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر، المعادي، المهندسين، فيصل، 6 أكتوبر، الهرم..." required>
                     </div>
+
                     <div class="form-group">
-                        <label for="area">المنطقة / الحي السكني:</label>
-                        <input type="text" id="area" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر / مصطفى النحاس / الحي الثامن / المعادي" required>
+                        <label for="issue">وصف المشكلة أو مظهر العطل *</label>
+                        <textarea id="issue" name="وصف_العطل" rows="3" placeholder="وضح المشكلة (مثال: الغسالة مش بتطرد المياه، التكييف بيجيب هواء دافئ، الثلاجة بتنقط مياه...)" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="issue">وصف مشكلة العطل:</label>
-                        <textarea id="issue" name="وصف_العطل" rows="3" placeholder="مثال: الحلة مش بتلف وفيه تسريب ميه، أو الثلاجة مش بتسقع تحت..." required></textarea>
-                    </div>
+
                     <button type="submit" class="form-submit-btn">
-                        إرسال طلب الصيانة الآن
+                        إرسال بلاغ الصيانة الآن 🚀
                     </button>
+                    <div class="form-note">
+                        🔒 بياناتك في سرية تامة وتستخدم فقط لتوجيه الفني الأقرب لعنوانك.
+                    </div>
                 </form>
             </div>
         </div>
@@ -719,29 +748,26 @@
 <section class="map-section" id="location">
     <div class="container">
         <div class="section-title">
-            <h2>موقع مركز صيانة بيكو - Beko</h2>
+            <h2>موقع مركز صيانة أجهزة بيكو</h2>
             <p>شارع هشام لبيب، متفرع من مصطفى النحاس، المنطقة الثامنة، مدينة نصر</p>
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3602426098987!2d31.3541068!3d30.055206800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f0139bb5003%3A0x361f4574adc02509!2z2YXYsdmD2LIg2LXZitin2YbYqSDYqNmK2YPZiCAtIEJla28!5e0!3m2!1sen!2seg!4v1791929258234!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="مركز صيانة بيكو مدينة نصر"></iframe>
         </div>
         <div class="location-data">
-            <strong>مركز صيانة بيكو - Beko</strong>
+            <strong>مركز صيانة أجهزة بيكو</strong>
             <br>
-            <strong>العنوان:</strong> شارع هشام لبيب، متفرع من Mostafa El-Nahaas، المنطقة الثامنة (Al Manteqah Ath Thamenah)، مدينة نصر، محافظة القاهرة 11765
+            <strong>العنوان:</strong> شارع هشام لبيب، متفرع من Mostafa El-Nahaas، المنطقة الثامنة، مدينة نصر، محافظة القاهرة 11765
             <br>
-            <strong>الهاتف المباشر:</strong> 01141298659
+            <strong>التواصل السريع:</strong> عبر الواتساب المخصص فقط
             <br>
-            <strong>نطاق الزيارات المنزلية السريعة:</strong> مدينة نصر، المنطقة الثامنة، مصطفى النحاس، عباس العقاد، مكرم عبيد، الحي السابع، الحي العاشر، مصر الجديدة، حدائق القبة، سراي القبة، مصر والسودان، المعادي، البساتين، التجمع، الهرم، فيصل وجميع أنحاء القاهرة والجيزة.
+            <strong>نطاق الزيارات المنزلية السريعة:</strong> مدينة نصر، المنطقة الثامنة، مصطفى النحاس، عباس العقاد، مكرم عبيد، الحي السابع، الحي العاشر، مصر الجديدة، حدائق القبة، سراي القبة، الزيتون، المعادي، البساتين، التجمع، الهرم، فيصل وجميع أنحاء القاهرة والجيزة.
         </div>
     </div>
 </section>
 
-<!-- أزرار الاتصال والتواصل العائمة للموبايل -->
+<!-- زر الواتساب العائم للموبايل -->
 <div class="float-bar">
-    <a href="tel:+201141298659" class="float-call">
-        📞 اتصال هاتفي
-    </a>
     <a href="https://wa.me/201156174546" target="_blank" class="float-whatsapp">
         💬 واتساب فني
     </a>
@@ -749,11 +775,11 @@
 
 <footer>
     <div class="container">
-        <strong>مركز صيانة بيكو - Beko</strong>
+        <strong>مركز صيانة أجهزة بيكو</strong>
         <br>
         شارع هشام لبيب متفرع من مصطفى النحاس، المنطقة الثامنة، مدينة نصر، القاهرة
         <br>
-        خدمة منزلية لفحص وإصلاح الغسالات والثلاجات والديب فريزر | للحجز والاستفسار: 01141298659
+        خدمة منزلية لفحص وإصلاح الغسالات والثلاجات والديب فريزر | للتنسيق السريع عبر الواتساب
         
         <div class="disclaimer-text">
             تنويه قانوني: نحن مركز صيانة حر ومستقل متخصص في تقديم خدمات الدعم الفني والإصلاح المنزلي للأجهزة الكهربائية، ولسنا التوكيل الرسمي أو الموزع المعتمد للعلامة التجارية؛ جميع الأسماء والعلامات التجارية المذكورة ملك لأصحابها وتُذكر لغرض توضيح نطاق تقديم الخدمة فقط.
