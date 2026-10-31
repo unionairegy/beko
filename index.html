@@ -149,14 +149,18 @@
             color: #263d47;
             font-size: 15px;
         }
-        .whatsapp-btn {
-            background: #25d366;
+        .action-link-btn {
+            background: #007da8;
             color: white;
             padding: 12px 24px;
             border-radius: 8px;
             font-weight: bold;
             display: inline-block;
             font-size: 16px;
+            transition: background 0.2s;
+        }
+        .action-link-btn:hover {
+            background: #006082;
         }
         .hero {
             padding: 70px 0;
@@ -571,8 +575,9 @@
             <a href="#booking">طلب فحص منزلي</a>
             <a href="#location">الفرع والخريطة</a>
         </nav>
-        <a class="whatsapp-btn" href="https://wa.me/201156174546" target="_blank">
-            💬 واتساب فني
+        <!-- الزر في الهيدر يوجه مباشرة لراوبط السكشن (#booking) -->
+        <a class="action-link-btn" href="#booking">
+            📅 حجز أونلاين
         </a>
     </div>
 </header>
@@ -755,7 +760,7 @@
     </div>
 </section>
 
-<!-- سكشن وفورمة الحجز الكبيرة العريضة -->
+<!-- سكشن وفورمة الحجز الكبيرة العريضة (يحتوي على الـ ID الخاص بالوصول المباشر: #booking) -->
 <section class="booking-section" id="booking">
     <div class="container">
         <div class="booking-container">
