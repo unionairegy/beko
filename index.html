@@ -324,104 +324,108 @@
             font-size: 17px;
         }
         
-        /* Booking section layout: Form on Left, Info on Right */
+        /* Big Unionaire-style Booking Section */
         .booking-section {
-            background: linear-gradient(135deg, #0b688b 0%, #084c66 100%);
+            background: #0f2c3d;
             color: white;
             padding: 70px 0;
+            text-align: center;
         }
-        .booking-wrapper {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 40px;
-            align-items: center;
-        }
-        .booking-info h2 {
-            font-size: 34px;
-            margin-top: 0;
-            line-height: 1.3;
-        }
-        .booking-info p {
-            font-size: 17px;
-            color: #dbeaf0;
-            margin-bottom: 20px;
-        }
-        .booking-card {
-            background: #ffffff;
+        .booking-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #143648;
             border-radius: 16px;
-            padding: 32px;
-            color: #1a2a30;
-            box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border: 1px solid #1c4960;
         }
-        .booking-card h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            color: #007da8;
-            font-size: 22px;
-            text-align: center;
-        }
-        .booking-card p.subtitle {
-            text-align: center;
+        .booking-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: #104b63;
+            color: #4cd383;
+            border-radius: 50px;
             font-size: 14px;
-            color: #72848c;
-            margin-bottom: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
         }
-        
-        /* Form Grid styling */
+        .booking-section h2 {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .booking-section p.sub-desc {
+            font-size: 16px;
+            color: #a8c2ce;
+            margin-bottom: 30px;
+        }
+
+        /* Form Grid styling inside big container */
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 20px;
+            text-align: right;
         }
         .form-group {
-            margin-bottom: 16px;
+            margin-bottom: 20px;
+            text-align: right;
         }
         .form-group label {
             display: block;
             font-size: 14px;
             font-weight: bold;
-            margin-bottom: 6px;
-            color: #2b3e47;
+            margin-bottom: 8px;
+            color: #d4e5ee;
         }
         .form-group input, 
         .form-group select, 
         .form-group textarea {
             width: 100%;
-            padding: 12px 14px;
-            border: 1px solid #cfe0e6;
+            padding: 14px 16px;
+            border: 1px solid #235570;
             border-radius: 8px;
             font-size: 15px;
             font-family: inherit;
-            background: #fbfdfd;
+            background: #0b222e;
+            color: #ffffff;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #618293;
         }
         .form-group input:focus, 
         .form-group select:focus, 
         .form-group textarea:focus {
             outline: none;
-            border-color: #007da8;
-            background: #fff;
+            border-color: #25d366;
+            background: #0f2c3d;
         }
         .form-submit-btn {
             width: 100%;
-            background: #d9381e;
+            background: #e65c24;
             color: white;
             border: none;
-            padding: 14px;
-            font-size: 17px;
+            padding: 16px;
+            font-size: 18px;
             font-weight: bold;
             border-radius: 8px;
             cursor: pointer;
             transition: background .2s;
+            margin-top: 10px;
         }
         .form-submit-btn:hover {
-            background: #b82d16;
+            background: #cf4e1b;
         }
         .form-note {
             text-align: center;
-            font-size: 12px;
-            color: #72848c;
-            margin-top: 12px;
+            font-size: 13px;
+            color: #8da4ae;
+            margin-top: 15px;
         }
+        
         footer {
             background: #102932;
             color: #dce7eb;
@@ -476,7 +480,6 @@
                 display: none;
             }
             .hero-content, 
-            .booking-wrapper, 
             .services, 
             .trouble-grid,
             .form-row {
@@ -487,6 +490,9 @@
             }
             .map iframe {
                 height: 340px;
+            }
+            .booking-container {
+                padding: 20px;
             }
         }
     </style>
@@ -665,88 +671,70 @@
     </div>
 </section>
 
-<!-- سكشن وفورمة الحجز (الفورمة على الشمال والكلام على اليمين) -->
+<!-- سكشن وفورمة الحجز الكبيرة العريضة (بنفس ستايل يونيون المرفق) -->
 <section class="booking-section" id="booking">
     <div class="container">
-        <div class="booking-wrapper">
-            
-            <!-- نموذج الحجز (أصبح في الشمال) -->
-            <div class="booking-card">
-                <h3>تسجيل بلاغ صيانة منزلية فورية</h3>
-                <p class="subtitle">⚡ استجابة سريعة لجميع مناطق القاهرة والجيزة</p>
+        <div class="booking-container">
+            <span class="booking-badge">⚡ استجابة سريعة لجميع مناطق القاهرة والجيزة</span>
+            <h2>تسجيل بلاغ صيانة منزلية فورية</h2>
+            <p class="sub-desc">سجل بياناتك وسيصل إخطار فوري لمشرف الصيانة للتواصل وتوجيه أقرب فني لموقعك</p>
 
-                <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="طلب صيانة جديد - مركز صيانة بيكو مدينة نصر">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://beko.maintenance-eg.net/">
+            <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="طلب صيانة جديد - مركز صيانة بيكو مدينة نصر">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://beko.maintenance-eg.net/">
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف للتواصل *</label>
-                            <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">الاسم بالكامل *</label>
-                            <input type="text" id="name" name="الاسم" placeholder="اكتب اسمك الكريم" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="time">الموعد المفضل للزيارة *</label>
-                            <select id="time" name="الموعد_المفضل" required>
-                                <option value="طوارئ / بأسرع وقت اليوم">⚡ طوارئ / بأسرع وقت اليوم</option>
-                                <option value="فترة صباحية">الفترة الصباحية</option>
-                                <option value="فترة مسائية">الفترة المسائية</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="device">نوع الجهاز المعطل *</label>
-                            <select id="device" name="نوع_الجهاز" required>
-                                <option value="غسالة ملابس بيكو">غسالة ملابس بيكو</option>
-                                <option value="ثلاجة بيكو">ثلاجة بيكو</option>
-                                <option value="ديب فريزر بيكو">ديب فريزر بيكو</option>
-                                <option value="غسالة أطباق بيكو">غسالة أطباق بيكو</option>
-                                <option value="مجفف ملابس بيكو">مجفف ملابس بيكو</option>
-                                <option value="فرن / بوتاجاز بيكو">فرن / بوتاجاز بيكو</option>
-                            </select>
-                        </div>
-                    </div>
-
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="area">العنوان بالتفصيل (القاهرة أو الجيزة) *</label>
-                        <input type="text" id="area" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر، المعادي، المهندسين، فيصل، 6 أكتوبر، الهرم..." required>
+                        <label for="phone">رقم الهاتف للتواصل *</label>
+                        <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="issue">وصف المشكلة أو مظهر العطل *</label>
-                        <textarea id="issue" name="وصف_العطل" rows="3" placeholder="وضح المشكلة (مثال: الغسالة مش بتطرد المياه، التكييف بيجيب هواء دافئ، الثلاجة بتنقط مياه...)" required></textarea>
+                        <label for="name">الاسم بالكامل *</label>
+                        <input type="text" id="name" name="الاسم" placeholder="اكتب اسمك الكريم" required>
                     </div>
+                </div>
 
-                    <button type="submit" class="form-submit-btn">
-                        إرسال بلاغ الصيانة الآن 🚀
-                    </button>
-                    <div class="form-note">
-                        🔒 بياناتك في سرية تامة وتستخدم فقط لتوجيه الفني الأقرب لعنوانك.
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="time">الموعد المفضل للزيارة *</label>
+                        <select id="time" name="الموعد_المفضل" required>
+                            <option value="طوارئ / بأسرع وقت اليوم">⚡ طوارئ / بأسرع وقت اليوم</option>
+                            <option value="فترة صباحية">الفترة الصباحية</option>
+                            <option value="فترة مسائية">الفترة المسائية</option>
+                        </select>
                     </div>
-                </form>
-            </div>
+                    <div class="form-group">
+                        <label for="device">نوع الجهاز المعطل *</label>
+                        <select id="device" name="نوع_الجهاز" required>
+                            <option value="غسالة ملابس بيكو">غسالة ملابس بيكو</option>
+                            <option value="ثلاجة بيكو">ثلاجة بيكو</option>
+                            <option value="ديب فريزر بيكو">ديب فريزر بيكو</option>
+                            <option value="غسالة أطباق بيكو">غسالة أطباق بيكو</option>
+                            <option value="مجفف ملابس بيكو">مجفف ملابس بيكو</option>
+                            <option value="فرن / بوتاجاز بيكو">فرن / بوتاجاز بيكو</option>
+                        </select>
+                    </div>
+                </div>
 
-            <!-- معلومات الحجز (أصبحت في اليمين) -->
-            <div class="booking-info">
-                <h2>احجز فني صيانة لمنزلك الآن</h2>
-                <p>
-                    سجل بيانات العطل وعنوانك في النموذج المقابل، وسيتم استلام طلبك ومتابعتك هاتفياً لتأكيد ميعاد الزيارة ومعرفة التفاصيل الفنية فوراً.
-                </p>
-                <p>
-                    أو يمكنك التواصل المباشر عبر الواتساب على مدار اليوم للتنسيق الفوري مع الفني المختص:
-                </p>
-                <a href="https://wa.me/201156174546" target="_blank" class="btn-primary" style="display:inline-block; margin-top: 10px; background: #25d366;">
-                    💬 محادثة واتساب فنية
-                </a>
-            </div>
+                <div class="form-group" style="text-align: right;">
+                    <label for="area">العنوان بالتفصيل (القاهرة أو الجيزة) *</label>
+                    <input type="text" id="area" name="المنطقة_والعنوان" placeholder="مثال: مدينة نصر، المعادي، المهندسين، فيصل، 6 أكتوبر، الهرم..." required>
+                </div>
 
+                <div class="form-group" style="text-align: right;">
+                    <label for="issue">وصف المشكلة أو مظهر العطل *</label>
+                    <textarea id="issue" name="وصف_العطل" rows="3" placeholder="وضح المشكلة (مثال: الغسالة مش بتطرد المياه، التكييف بيجيب هواء دافئ، الثلاجة بتنقط مياه...)" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">
+                    إرسال بلاغ الصيانة الآن 🚀
+                </button>
+                <div class="form-note">
+                    🔒 بياناتك في سرية تامة وتستخدم فقط لتوجيه الفني الأقرب لعنوانك.
+                </div>
+            </form>
         </div>
     </div>
 </section>
